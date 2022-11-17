@@ -1,1 +1,11 @@
-/* CSS Style Sheet */
+body {
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
