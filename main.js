@@ -2,17 +2,26 @@
 // input
 //alert
 
-let msg = "Username is valid";
-let message = "username is invalid";
-
-document.getElementById("Username");
-document.getElementById("Password");
+document.getElementById("Admin");
+document.getElementById("onetwothreefour");
 document.addEventListener;
+"click", login;
 
-if (Username === "Username") {
-  Username = "valid";
-  alert(msg);
-} else if (Username === "username") {
-  username = "invalid";
-  alert(message);
+let U = prompt("Enter Username");
+
+let P = prompt("Enter Password");
+
+let username = Admin;
+
+let password = psw;
+
+if (username === `Admin`) {
+  alert(`valid`);
+} else {
+  alert("invalid");
+}
+if (password === `psw`) {
+  alert(`valid`);
+} else {
+  alert(`invalid`);
 }
