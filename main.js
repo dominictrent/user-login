@@ -5,17 +5,19 @@
 document.getElementById("Login").addEventListener("click", Login);
 
 function Login() {
-  let username = document.getElementById("admin").value;
+  let username = document.getElementById("user").value;
 
-  let password = document.getElementById("PSW").value;
+  let password = document.getElementById("psw").value;
 
-  if (username === "admin" && password === "PSW") {
-    Login = "Valid Login Crednentials";
-  } else if (username === "admim") {
-    Login = "invalid Password";
-  } else if (password === "PSW") {
-    Login = "Invalid Username";
+  if (username === "admin" && password === "psw") {
+    Login = "Valid Login Credentials!";
+    console.log("Valid Login Creds");
+  } else if (username === "admin") {
+    Login = "Invalid Passowrd!";
+  } else if (password === "psw") {
+    Login = "Inavlid Username";
   } else {
-    Login = "Invalid Login Credentials";
+    Login = "Enter Username and Password";
   }
+  document.getElementById("LoginO").innerHTML = `${Login}`;
 }
