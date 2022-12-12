@@ -2,17 +2,20 @@
 // input
 //alert
 
-document.getElementById("admin");
-document.getElementById("psw");
-document.addEventListener;
-"click", login;
+document.getElementById("Login").addEventListener("click", Login);
 
-let username = prompt("Enter Username");
+function Login() {
+  let username = document.getElementById("admin").value;
 
-let password = prompt("Enter Password");
+  let password = document.getElementById("PSW").value;
 
-if (username === `admin` && password === `psw`) {
-  alert(`valid`);
-} else {
-  alert(`invalid`);
+  if (username === "admin" && password === "PSW") {
+    Login = "Valid Login Crednentials";
+  } else if (username === "admim") {
+    Login = "invalid Password";
+  } else if (password === "PSW") {
+    Login = "Invalid Username";
+  } else {
+    Login = "Invalid Login Credentials";
+  }
 }
